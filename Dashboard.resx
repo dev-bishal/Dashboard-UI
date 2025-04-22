@@ -131,6 +131,40 @@ Lorem Ipsum has been the industry's
 standard dummy text ever since the 1500s, 
 when an unknown printer took a galley of type.</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="label14.Text" xml:space="preserve">
     <value>Lorem Ipsum is simply dummy text of 
 the printing and typesetting industry. 

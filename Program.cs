@@ -16,7 +16,7 @@ namespace Dashboard_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Buttons());
+            Application.Run(new Form1());
         }
     }
 }

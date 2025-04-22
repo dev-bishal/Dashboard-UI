@@ -61,6 +61,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.RightContainerPnl = new System.Windows.Forms.Panel();
             this.rightBottomPnl = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -89,6 +92,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             this.RightContainerPnl.SuspendLayout();
             this.rightBottomPnl.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.rightTopPnl.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -124,7 +129,7 @@
             this.leftBottomPnl.Controls.Add(this.VolByFundPnl);
             this.leftBottomPnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.leftBottomPnl.Location = new System.Drawing.Point(0, 420);
-            this.leftBottomPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.leftBottomPnl.Margin = new System.Windows.Forms.Padding(4);
             this.leftBottomPnl.Name = "leftBottomPnl";
             this.leftBottomPnl.Size = new System.Drawing.Size(929, 415);
             this.leftBottomPnl.TabIndex = 1;
@@ -138,7 +143,7 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(452, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(477, 415);
             this.panel1.TabIndex = 5;
@@ -218,7 +223,7 @@
             this.chart1.Location = new System.Drawing.Point(9, 112);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
-            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedColumn;
             series1.LabelBackColor = System.Drawing.Color.Transparent;
@@ -250,19 +255,20 @@
             this.leftTopPnl.Controls.Add(this.totVolPnl);
             this.leftTopPnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.leftTopPnl.Location = new System.Drawing.Point(0, 0);
-            this.leftTopPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.leftTopPnl.Margin = new System.Windows.Forms.Padding(4);
             this.leftTopPnl.Name = "leftTopPnl";
             this.leftTopPnl.Size = new System.Drawing.Size(929, 420);
             this.leftTopPnl.TabIndex = 0;
             // 
             // volByQuePnl
             // 
+            this.volByQuePnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(214)))), ((int)(((byte)(233)))));
             this.volByQuePnl.Controls.Add(this.label2);
             this.volByQuePnl.Controls.Add(this.chart2);
             this.volByQuePnl.Controls.Add(this.label7);
             this.volByQuePnl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.volByQuePnl.Location = new System.Drawing.Point(452, 0);
-            this.volByQuePnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.volByQuePnl.Margin = new System.Windows.Forms.Padding(4);
             this.volByQuePnl.Name = "volByQuePnl";
             this.volByQuePnl.Size = new System.Drawing.Size(477, 420);
             this.volByQuePnl.TabIndex = 1;
@@ -298,6 +304,7 @@
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StackedArea;
             series2.Legend = "Legend1";
             series2.Name = "Series1";
+            series2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(465, 251);
             this.chart2.TabIndex = 7;
@@ -316,12 +323,13 @@
             // 
             // totVolPnl
             // 
+            this.totVolPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(214)))), ((int)(((byte)(233)))));
             this.totVolPnl.Controls.Add(this.label8);
             this.totVolPnl.Controls.Add(this.chart3);
             this.totVolPnl.Controls.Add(this.label1);
             this.totVolPnl.Dock = System.Windows.Forms.DockStyle.Left;
             this.totVolPnl.Location = new System.Drawing.Point(0, 0);
-            this.totVolPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.totVolPnl.Margin = new System.Windows.Forms.Padding(4);
             this.totVolPnl.Name = "totVolPnl";
             this.totVolPnl.Size = new System.Drawing.Size(452, 420);
             this.totVolPnl.TabIndex = 0;
@@ -349,7 +357,7 @@
             this.chart3.Location = new System.Drawing.Point(9, 62);
             this.chart3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart3.Name = "chart3";
-            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            this.chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
             series3.Color = System.Drawing.Color.Transparent;
@@ -358,7 +366,7 @@
             series3.LabelBorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
             series3.Legend = "Legend1";
             series3.Name = "Series1";
-            series3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
+            series3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             this.chart3.Series.Add(series3);
             this.chart3.Size = new System.Drawing.Size(413, 263);
             this.chart3.TabIndex = 7;
@@ -391,6 +399,8 @@
             // 
             // rightBottomPnl
             // 
+            this.rightBottomPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(217)))), ((int)(((byte)(226)))));
+            this.rightBottomPnl.Controls.Add(this.panel2);
             this.rightBottomPnl.Controls.Add(this.button1);
             this.rightBottomPnl.Controls.Add(this.label6);
             this.rightBottomPnl.Controls.Add(this.label14);
@@ -401,13 +411,47 @@
             this.rightBottomPnl.Size = new System.Drawing.Size(400, 415);
             this.rightBottomPnl.TabIndex = 3;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(70)))));
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Location = new System.Drawing.Point(108, 276);
+            this.panel2.Name = "panel2";
+            this.panel2.Padding = new System.Windows.Forms.Padding(8);
+            this.panel2.Size = new System.Drawing.Size(197, 73);
+            this.panel2.TabIndex = 7;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(73, 20);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(99, 32);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "Import";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(59, 57);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(208)))), ((int)(((byte)(166)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(93, 286);
+            this.button1.Location = new System.Drawing.Point(97, 429);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(221, 50);
@@ -440,6 +484,7 @@
             // 
             // rightTopPnl
             // 
+            this.rightTopPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(217)))), ((int)(((byte)(226)))));
             this.rightTopPnl.Controls.Add(this.panel5);
             this.rightTopPnl.Controls.Add(this.panel4);
             this.rightTopPnl.Controls.Add(this.label11);
@@ -454,7 +499,7 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(208)))), ((int)(((byte)(166)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(187)))), ((int)(((byte)(236)))));
             this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.label16);
             this.panel5.Location = new System.Drawing.Point(197, 165);
@@ -490,7 +535,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(208)))), ((int)(((byte)(166)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(187)))), ((int)(((byte)(236)))));
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.label15);
             this.panel4.Location = new System.Drawing.Point(13, 165);
@@ -587,6 +632,9 @@
             this.RightContainerPnl.ResumeLayout(false);
             this.rightBottomPnl.ResumeLayout(false);
             this.rightBottomPnl.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.rightTopPnl.ResumeLayout(false);
             this.rightTopPnl.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -608,7 +656,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label15;
@@ -636,5 +683,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button1;
     }
 }
