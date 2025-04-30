@@ -39,5 +39,14 @@ namespace Dashboard_UI
             chart3.Series[0].Points.AddXY("Category3", 25);
         }
 
+        private void Panel_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Panel_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
     }
 }
